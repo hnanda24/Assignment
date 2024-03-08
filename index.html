@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>FriendShip Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="dm">
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a class="navIcon" href="">
+        <img
+          class="imgResponsive"
+          src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png"
+          alt=""
+        />
+      </a>
+
+      <a class="navItems" href="">
+        <img
+          class="imgResponsive"
+          src="https://img.holaquiz.com/public/site_content/quiz/ck_editor/images/FSQ_LOGO.png"
+          alt=""
+        />
+      </a>
+
+      <a class="navItems searchBar" href="">
+        <img
+          class="imgResponsive globe"
+          src="https://friendshipquiz2022.com/public/images/friends_forever/lang.png"
+          alt=""
+        />
+        <select class="lang" name="lang">
+          <option value="en$$0" selected="">English</option>
+          <option value="cn$$0">繁體中文</option>
+          <option value="ch$$0">简体中文</option>
+          <option value="id$$0">Bahasa Indonesia</option>
+          <option value="my$$0">Bahasa Melayu</option>
+          <option value="vn$$0">tiếng Việt</option>
+          <option value="th$$0">ภาษาไทย</option>
+          <option value="fr$$0">Français</option>
+          <option value="es$$0">Español</option>
+          <option value="pt$$0">Português</option>
+          <option value="it$$0">Italiano</option>
+          <option value="de$$0">Deutsch</option>
+          <option value="nl$$0">Nederlands</option>
+          <option value="cz$$0">čeština</option>
+          <option value="ar$$0">عربي</option>
+          <option value="il$$0">עִבְרִית</option>
+          <option value="tr$$0">Türkçe</option>
+          <option value="el$$0">Ελληνικά</option>
+          <option value="rom$$0">Română</option>
+          <option value="bg$$0">Български</option>
+          <option value="rs$$0">Srpsko-hrvatski</option>
+          <option value="si$$0">Slovenščina</option>
+          <option value="hu$$0">Magyar</option>
+          <option value="slk$$0">Slovenčina</option>
+          <option value="kr$$0">한국어</option>
+          <option value="jp$$0">日本語</option>
+          <option value="dk$$0">Dansk</option>
+          <option value="fi$$0">Suomi</option>
+          <option value="no$$0">Norsk</option>
+          <option value="se$$0">svenska</option>
+          <option value="ee$$0">Eesti</option>
+          <option value="lv$$0">Latviešu</option>
+          <option value="lt$$0">lietuvis</option>
+          <option value="ru$$0">Русский</option>
+          <option value="ua$$0">українська</option>
+        </select>
+      </a>
+    </nav>
+
+    <!-- Navbar ended here -->
+
+    <!-- main element -->
+    <div class="content">
+      <button onclick="darkMode()" class="dark-mode-toggle" id="darkModeBtn">
+        Dark Mode
+      </button>
+      <div class="main_con_sec">
+        <!-- <p class='favourite-color-score text-center play_text_top'></p> -->
+        <h2 class="text-center main_head">🤝🏻 BFF Friendship Test 🤩</h2>
+
+        <div class="inst_sec">
+          <h3>Instructions:</h3>
+          <div class="blue_box">
+            <div class="inst_list">
+              <ul>
+                <li><span class="red"></span>Enter your name.</li>
+                <li>
+                  <span class="yellow"></span>Answer any 10 Questions about
+                  yourself.
+                </li>
+                <li>
+                  <span class="green"></span>Your quiz-link will be ready.
+                </li>
+                <li>
+                  <span class="blue"></span>Share your quiz-link with your
+                  friends.
+                </li>
+                <li>
+                  <span class="purple"></span>Your friends will try to guess the
+                  right answers.
+                </li>
+                <li>
+                  <span class="red"></span>Check the score of your friends at
+                  your Friendboard.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form method="post" class="ng-pristine ng-valid">
+          <div class="bottom_div">
+            <div class="name_div">
+              <input
+                ng-model="userFullName"
+                type="text"
+                id="name"
+                placeholder="Enter your name (eg. Jack)"
+                maxlength="25"
+                name="name"
+                value=""
+                class="ng-pristine ng-valid"
+              />
+            </div>
+            <div class="error nameMsg" style="display: none">
+              Please Enter your name
+            </div>
+            <div class="error error_home atinnameMsg" style="display: none">
+              @ is Not Allowed
+            </div>
+            <div class="error error_home curseWordMsg" style="display: none">
+              Abusive language is not allowed
+            </div>
+          </div>
+
+          <div class="continue_btn_div">
+            <input
+              type="submit"
+              class="continue_btn"
+              name="startQuiz"
+              value="Start"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <ul>
+        <li>
+          <a href="https://twitter.com/QuizFriendship" target="_blank"
+            ><img
+              src="https://friendshipquiz2022.com/public/images/friends_forever/twitter_footer.png"
+          /></a>
+        </li>
+        <li class="footer_button_cover">
+          <a href="https://www.instagram.com/friendshipquiz22/" target="_blank"
+            ><img
+              src="https://friendshipquiz2022.com/public/images/friends_forever/instagram_footer.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/FriendshipQuiz22/" target="_blank"
+            ><img
+              src="https://friendshipquiz2022.com/public/images/friends_forever/fb_footer.png"
+          /></a>
+        </li>
+      </ul>
+
+      <ul class="footer-links">
+        <li>
+          <a href="https://friendshipquiz2022.com/fr/privacy-policy"
+            >Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a href="https://friendshipquiz2022.com/fr/terms-of-use"
+            >Terms of Use
+          </a>
+        </li>
+        <li><a href="https://friendshipquiz2022.com/fr/faq">FAQs </a></li>
+      </ul>
+      <p></p>
+      <p>copyright@friendshipquiz2022 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
