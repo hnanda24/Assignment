@@ -2,6 +2,12 @@ const bgClrChange = document.querySelector('.content');
 const clrChange = document.getElementById('dm');
 const navClrChange = document.querySelector('.navbar');
 const footClr = document.querySelector('.footer');
+const darkBtn = document.getElementById('darkModeBtn');
+const btnBackground = document.querySelector('.dark-mode-toggle');
+const textClr1 = document.querySelector('.text-center');
+const textClr2 = document.querySelector('.txt');
+const textClr3 = document.querySelector('.list');
+const bgClr = document.querySelector('.main_con_sec');
 
 function darkMode()
 {
@@ -9,8 +15,13 @@ function darkMode()
     navClrChange.style.backgroundColor = '#000120';
     footClr.style.backgroundColor = 'black';
     bgClrChange.style.backgroundImage = "url('./SourceFiles/pxfuel.jpg')";
-    const darkBtn = document.getElementById('darkModeBtn');
     darkBtn.innerHTML = 'Light Mode';
+    btnBackground.style.backgroundColor = '#000120';
+    btnBackground.style.color = '#9acaee';
+    textClr1.style.color = 'white';
+    textClr2.style.color = 'white';
+    textClr3.style.color = '#000120';
+    bgClr.style.backgroundColor = '#000120';
     darkBtn.addEventListener('click', () => {
                 lightMode();
             });
@@ -22,8 +33,13 @@ function lightMode()
     clrChange.style.color = 'black';
     navClrChange.style.backgroundColor = '#9acaee';
     footClr.style.backgroundColor = '#9acaee';
-    const darkBtn = document.getElementById('darkModeBtn');
     darkBtn.innerHTML = 'Dark Mode';
+    btnBackground.style.backgroundColor = '#9acaee';
+    btnBackground.style.color = '#000120';
+    bgClr.style.backgroundColor = '#9acaee';
+    textClr1.style.color = '#000120';
+    textClr2.style.color = '#000120';
+    textClr3.style.color = '#000120';
     darkBtn.addEventListener('click', () => {
                 darkMode();
             });
