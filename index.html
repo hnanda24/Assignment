@@ -25,12 +25,17 @@
         />
       </a>
 
-      <a class="navItems searchBar" href="">
-        <img
-          class="imgResponsive globe"
-          src="https://friendshipquiz2022.com/public/images/friends_forever/lang.png"
-          alt=""
-        />
+      <div class="navItems searchBar" id="globeDiv">
+        <button onclick="darkMode()" class="dark-mode-toggle" id="darkModeBtn">
+          Dark Mode
+        </button>
+        <a href="">
+          <img
+            class="imgResponsive globe"
+            src="https://friendshipquiz2022.com/public/images/friends_forever/lang.png"
+            alt=""
+          />
+        </a>
         <select class="lang" name="lang">
           <option value="en$$0" selected="">English</option>
           <option value="cn$$0">繁體中文</option>
@@ -68,18 +73,13 @@
           <option value="ru$$0">Русский</option>
           <option value="ua$$0">українська</option>
         </select>
-      </a>
+      </div>
     </nav>
 
     <!-- Navbar ended here -->
 
     <!-- main element -->
     <div class="content">
-      <div class="dkbtn">
-        <button onclick="darkMode()" class="dark-mode-toggle" id="darkModeBtn">
-          Dark Mode
-        </button>
-      </div>
       <div class="main_con_sec">
         <!-- <p class='favourite-color-score text-center play_text_top'></p> -->
         <h2 class="text-center main_head">🤝🏻 BFF Friendship Test 🤩</h2>
